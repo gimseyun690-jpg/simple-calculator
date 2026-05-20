@@ -1,15 +1,36 @@
 {
- "name": "simple-calculator",
- "version": "1.0.0",
- "description": "GitHub Actions CI/CD 학습용 계산기",
- "type": "module",
- "scripts": {
- "start": "npx http-server src -p 8080 -c-1",
- "lint": "eslint src tests/unit tests/integration",
- "audit": "npm audit --audit-level=high",
- "test:unit": "jest tests/unit",
- "test:integration": "jest tests/integration",
- "test": "jest"
- },
- "devDependencies": { "...": "npm install이 자동으로 채움" }
+  "name": "simple-calculator",
+  "version": "1.0.0",
+  "description": "GitHub Actions CI/CD 학습용 계산기",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx http-server src -p 8080 -c-1",
+    "lint": "eslint src tests/unit tests/integration",
+    "audit": "npm audit --audit-level=high",
+    "test:unit": "jest tests/unit",
+    "test:integration": "jest tests/integration",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gimseyun690-jpg/simple-calculator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/gimseyun690-jpg/simple-calculator/issues"
+  },
+  "homepage": "https://github.com/gimseyun690-jpg/simple-calculator#readme",
+  "devDependencies": {
+    "@babel/core": "^7.29.0",
+    "@babel/preset-env": "^7.29.5",
+    "babel-jest": "^30.4.1",
+    "eslint": "^10.4.0",
+    "globals": "^17.6.0",
+    "http-server": "^14.1.1",
+    "jest": "^30.4.2",
+    "jest-environment-jsdom": "^30.4.1"
+  }
 }

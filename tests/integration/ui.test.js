@@ -21,6 +21,13 @@ describe("계산기 UI 통합", () => {
     expect(document.querySelector('[data-testid="display"]').textContent).toBe("15");
   });
 
+  test("빼기 버튼이 두 입력값을 빼서 display에 표시한다", () => {
+    document.getElementById("inputA").value = "10";
+    document.getElementById("inputB").value = "4";
+    document.querySelector('[data-testid="btn-subtract"]').click();
+    expect(document.querySelector('[data-testid="display"]').textContent).toBe("6");
+  });
+
   test("초기화 버튼이 입력과 display를 리셋한다", () => {
     document.getElementById("inputA").value = "1";
     document.getElementById("inputB").value = "2";
