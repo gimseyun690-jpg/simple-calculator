@@ -9,6 +9,7 @@
     "audit": "npm audit --audit-level=high",
     "test:unit": "jest tests/unit",
     "test:integration": "jest tests/integration",
+    "test:e2e": "playwright test",
     "test": "jest"
   },
   "repository": {
@@ -26,6 +27,7 @@
   "devDependencies": {
     "@babel/core": "^7.29.0",
     "@babel/preset-env": "^7.29.5",
+    "@playwright/test": "^1.60.0",
     "babel-jest": "^30.4.1",
     "eslint": "^10.4.0",
     "globals": "^17.6.0",
