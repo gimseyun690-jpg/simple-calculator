@@ -7,7 +7,7 @@ export function subtract(a, b) {
 }
 
 export function multiply(a, b) {
-  return a * b;
+  return a + b; // 일부러 잘못 구현
 }
 
 export function divide(a, b) {
